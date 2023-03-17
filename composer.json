@@ -1,0 +1,33 @@
+{
+    "name": "marinar/products_sizes",
+    "description": "Product sizes addon",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marin Ivanov",
+            "email": "marin@dev.nddesign.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Marinar\\ProductsSizes\\": "src/"
+        }
+    },
+
+    "require": {
+        "marinar/products": "*",
+        "marinar/attachments": "*",
+        "marinar/orderable": "*",
+        "marinar/discountable": "*"
+    },
+    "extra": {
+        "marinar": {
+            "module": false,
+            "plugin": false,
+            "addon_to": [
+                "marinar/products"
+            ]
+        }
+    }
+}
